@@ -39,6 +39,12 @@ const ChartElement = () => {
                 },
                 border: {
                     display: false
+                },
+                ticks: {
+                    font: {
+                        size: 13,
+                        family: '"DM Sans", sans-serif'
+                    }
                 }
             },
             y: {
@@ -64,7 +70,11 @@ const ChartElement = () => {
                     },
                     title: () => '',
                 },
-            }
+                bodyFont: {
+                    size: 13,
+                    family: '"DM Sans", sans-serif'
+                }
+            },
         }
     }
     const chartRef = useRef(null)
